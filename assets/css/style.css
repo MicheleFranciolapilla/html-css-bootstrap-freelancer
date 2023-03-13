@@ -2,9 +2,26 @@
 /***************************/
 :root
 {
+/* VARIABILI DIMENSIONALI  */
+    --nav_height:           10vh;
+    --start_height: 90vh;
 /* VARIABILI CROMATICHE    */
     --nav_color:            #2C3E50;
-    --title_section_color:  #1ABC9C;
+    --start_color:  #1ABC9C;
     --footer_color:         #3A546D;
 }
 /***************************/
+
+/* NAV (BOZZA) */
+nav
+{
+    height: var(--nav_height);
+    background-color: var(--nav_color);
+}
+
+#start
+{
+    height: var(--start_height);
+    background-color: var(--start_color);
+}
+
