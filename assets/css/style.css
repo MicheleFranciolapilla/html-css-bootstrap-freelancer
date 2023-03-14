@@ -12,26 +12,28 @@
 }
 /***************************/
 
-/* NAV (BOZZA) */
-nav
+.fa-solid.fa-star::before
 {
-    height: var(--nav_height);
-    background-color: var(--nav_color);
-}
-
-/* .star_line::after
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 20%;
-    height: 3px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 170%;
+    height: 5px;
     background-color: black;
-} */
+}
 
 footer a.btn.rounded-circle
 {
     width: 2.5rem;
     height: 2.5rem;
+}
+
+/**************************************/
+/*           MEDIA QUERIES            */
+/**************************************/
+@media only screen and (max-width: 400px)
+{
+    #start h6
+    {
+        font-size: 0.6rem;
+    }
 }

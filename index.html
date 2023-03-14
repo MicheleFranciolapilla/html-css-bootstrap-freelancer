@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="bg-dark">
 
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,37 @@
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
         <div id="start" class="container-fluid bg-success center_text">
             <div>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 center_block d-flex flex-column justify-content-between align-items-center gy-4 py-3" style="color: white">
+                    <div class="col-12 col-md-8 col-lg-6 center_block d-flex flex-column justify-content-between align-items-center gy-4 py-3" style="color: white">
                         <img src="assets/img/avatar.svg" alt="" width="50%">
+                        <!-- CON LA MEDIA QUERY INSERITA, LA STRUTTURA DEL TESTO REGGE FINO A WIDTH 250 PIXEL -->
                         <h1>START BOOTSTRAP</h1>
-                        <h5>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h5>
+                        <i class="fa-solid fa-star fs-1"></i>
+                        <h6>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
                     </div>
                 </div>
             </div>
@@ -37,7 +61,7 @@
     <main>
 
         <section id="portfolio" class="container-md">
-            <h2 class="text-center star_line position-relative">PORTFOLIO</h2>
+            <h2 class="text-center star_line position-relative py-4">PORTFOLIO</h2>
             <div class="row g-2">
                 <div class="col-12 col-md-6 col-lg-4">
                     <img class="image-fluid img-thumbnail" src="assets/img/cabin.png">
@@ -82,6 +106,10 @@
                 <!-- </div> -->
             </div>
         </section> 
+
+        <section id="contact_me" class="container">
+
+        </section>
 
     </main>
 
