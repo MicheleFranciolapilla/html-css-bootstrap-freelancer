@@ -19,12 +19,6 @@ nav
     background-color: var(--nav_color);
 }
 
-#start
-{
-    height: var(--start_height);
-    background-color: var(--start_color);
-}
-
 /* .star_line::after
 {
     position: absolute;
@@ -38,8 +32,6 @@ nav
 
 footer a.btn.rounded-circle
 {
-    line-height: 2.5rem;
-    vertical-align: text-bottom;
     width: 2.5rem;
     height: 2.5rem;
 }
