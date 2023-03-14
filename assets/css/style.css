@@ -25,3 +25,13 @@ nav
     background-color: var(--start_color);
 }
 
+/* .star_line::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: black;
+} */
