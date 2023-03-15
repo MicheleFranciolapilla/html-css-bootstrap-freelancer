@@ -20,11 +20,15 @@
 </head>
 
 <body>
+    <!-- Header, contenente navbar e sezione principale -->
     <header>
+        <!-- NavBar -->
         <div id="nav_box" class="position-fixed top-0 start-0 end-0">
+            <!-- Barra di navigazione "fluida", con logo a sinistra e menu (sandwich per mobile ed espanso per tablet e desktop) a destra -->
             <nav class="navbar navbar-expand-md container-md navbar-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand fs-6" href="#">START BOOTSTRAP</a>
+                  <!-- Sandwich menu collassabile -->
                   <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -45,9 +49,12 @@
             </nav>
         </div>
 
+        <!-- Sezione principale con immagine (width:25%) e testo. -->
+        <!-- Sotto il titolo ed i titoli delle altre sezioni si trova un "logo" con stella al centro e ali laterali. A differenza del mockup, si e' scelto di strutturare il "logo a stella" con ali di lunghezza proporzionale al titolo che lo sovrasta -->
         <div id="start" class="container-fluid center_text text-white py-5">
             <img class="w-25 mt-3" src="assets/img/avatar.svg" alt="avatar">
             <div class="py-3">
+                <!-- L'inserimento del titolo e della stella f.a. in un div, unitamente a del codice css consente la proporzionalita' delle ali rispetto al titolo stesso -->
                 <div class="d-inline-block position-relative star_logo">
                     <h1>START BOOTSTRAP</h1>
                     <i class="fa-solid fa-star fs-3"></i>
@@ -58,15 +65,22 @@
         </div>
     </header>
 
+    <!-- Nel main sono presenti tutte le sezioni, ad eccezione del footer e della mini sezione credits -->
     <main>
 
+        <!-- Sezione contenente 6 immagini disposte nel seguente modo: -->
+        <!-- 1 immagine per rigo in modalita' smartphone (xs) -->
+        <!-- 2 immagini per rigo in modalita' tablet (md) -->
+        <!-- 3 immagini per rigo in modalita' desktop (lg) -->
         <section id="portfolio" class="container-fluid center_text px-0 py-5">
+            <!-- Logo stellato con ali proporzionali al titolo -->
             <div class="py-3">
                 <div class="d-inline-block position-relative star_logo">
                     <h2>PORTFOLIO</h2>
                     <i class="fa-solid fa-star fs-4"></i>
                 </div>
             </div>
+            <!-- Contenitore delle immagini -->
             <div class="container-md">
                 <div class="row g-1">
                     <div class="col-12 col-md-6 col-lg-4">
@@ -91,13 +105,18 @@
             </div>
         </section>
 
+        <!-- Sezione contenente un pulsante e del testo (due paragrafi) disposto come segue: -->
+        <!-- Incolonnato in modalita' xs-->
+        <!-- Affiancato in modalita' md e lg -->
         <section id="about" class="container-fluid center_text text-white px-0 py-3">
+            <!-- Logo stellato con ali proporzionali al titolo -->
             <div class="py-3">
                 <div class="d-inline-block position-relative star_logo">
                     <h2>ABOUT</h2>
                     <i class="fa-solid fa-star fs-4"></i>
                 </div>
             </div>
+            <!-- Contenitore testo -->
             <div class="container-md d-flex flex-column align-items-center g-5 py-5">
                 <div class="row text-start mx-5 mx-md-4 mx-lg-1">
                     <div class="col-xs-12 col-md-6">
@@ -112,18 +131,22 @@
                     </div>
                 </div>
             </div>
+            <!-- Pulsante -->
             <a href="#" class="btn btn-outline-secondary fw-bold text-white border-white">
                 <i class="fa fa-download" aria-hidden="true"></i> Download
             </a>
         </section> 
 
+        <!-- Sezione contenente il form di contatto -->
         <section id="contact" class="container-fluid center_text px-0 py-3">
+            <!-- Logo stellato con ali proporzionali al titolo -->
             <div class="py-3">
                 <div class="d-inline-block position-relative star_logo">
                     <h2>CONTACT ME</h2>
                     <i class="fa-solid fa-star fs-4"></i>
                 </div>
             </div>
+            <!-- Contenitore del form -->
             <div class="container-md g-5">
                 <div class="row mx-5 mx-md-4 mx-lg-1">
                     <form>
@@ -152,7 +175,7 @@
                         <div class="row mb-3">
                             <label for="input_message" class="form-label text-start col-12">Message</label>
                             <div class="col-1">
-                                <textarea name="message" id="input_message" class="px-0" placeholder="WRITE HERE YOUR MESSAGE TO US" cols="50" rows="5"></textarea>
+                                <textarea name="message" id="input_message" class="px-0" placeholder="WRITE HERE YOUR MESSAGE TO US" cols="30" rows="5"></textarea>
                             </div>
                         </div>
                         
@@ -169,6 +192,9 @@
 
     </main>
 
+    <!-- Footer contenente testo ed icone f.a. disposti come segue: -->
+    <!-- 3 blocchi incolonnati in modalita' xs -->
+    <!-- 3 blocchi aggiancati in modalita' md e lg -->
     <footer class="container-fluid text-white">
         <div class="container-md py-5">
             <div class="row center_text">
@@ -201,6 +227,7 @@
         </div>
     </footer>
 
+    <!-- Semplice contenitore "credits" -->
     <div id="credits" class="container-fluid py-3 center_text">
         <span style="color: white;">Copyright &copy Your Website 2019</span>
     </div>

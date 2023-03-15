@@ -25,26 +25,28 @@
     background-color: var(--start_color);
 }
 
+/* Pseudo elemento "before" che realizza l'ala di sinistra della stella f.a., proporzionale al testo che la precede */
 .star_logo::before
 {
     position: absolute;
     bottom: 0;
-    left: -15%;
+    left: -5%;
     transform: translateY(-13px);
     content: "";
-    width: 50%;
+    width: 33%;
     height: 5px;
     background-color: white;
 }
 
+/* Pseudo elemento "after" che realizza l'ala di destra della stella f.a., proporzionale al testo che la precede */
 .star_logo::after
 {
     position: absolute;
     bottom: 0;
-    right: -15%;
+    right: -5%;
     transform: translateY(-13px);
     content: "";
-    width: 50%;
+    width: 33%;
     height: 5px;
     background-color: white;
 }
@@ -72,6 +74,7 @@ footer
     background-color: var(--footer_color);
 }
 
+/* Bordo circolare intorno alle icone nel footer */
 footer a.btn.rounded-circle
 {
     border-color: white;
