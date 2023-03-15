@@ -2,7 +2,6 @@
 /***************************/
 :root
 {
-/* VARIABILI DIMENSIONALI  */
 /* VARIABILI CROMATICHE    */
     --nav_color:            #2C3E50;
     --start_color:          #1ABC9C;
@@ -10,9 +9,15 @@
 }
 /***************************/
 
-#nav_box
+#nav_box, #credits
 {
     background-color: var(--nav_color);
+    z-index: 999;
+}
+
+#nav_box a
+{
+    color: white;
 }
 
 #start, #about
@@ -57,8 +62,14 @@
     border: none;
 }
 
+footer
+{
+    background-color: var(--footer_color);
+}
+
 footer a.btn.rounded-circle
 {
+    border-color: white;
     width: 2.5rem;
     height: 2.5rem;
 }
