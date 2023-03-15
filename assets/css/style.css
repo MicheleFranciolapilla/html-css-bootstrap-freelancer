@@ -3,22 +3,58 @@
 :root
 {
 /* VARIABILI DIMENSIONALI  */
-    --nav_height:           10vh;
-    --start_height: 90vh;
 /* VARIABILI CROMATICHE    */
     --nav_color:            #2C3E50;
-    --start_color:  #1ABC9C;
+    --start_color:          #1ABC9C;
     --footer_color:         #3A546D;
 }
 /***************************/
 
-.fa-solid.fa-star::before
+#nav_box
 {
-    display: inline-block;
-    vertical-align: text-bottom;
-    width: 170%;
+    background-color: var(--nav_color);
+}
+
+#start, #about
+{
+    background-color: var(--start_color);
+}
+
+.star_logo::before
+{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateY(-13px);
+    content: "";
+    width: 30%;
     height: 5px;
+    background-color: white;
+}
+
+.star_logo::after
+{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    transform: translateY(-13px);
+    content: "";
+    width: 30%;
+    height: 5px;
+    background-color: white;
+}
+
+#portfolio .star_logo::before,
+#portfolio .star_logo::after,
+#contact .star_logo::before,
+#contact .star_logo::after
+{
     background-color: black;
+}
+
+#contact input
+{
+    border: none;
 }
 
 footer a.btn.rounded-circle

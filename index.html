@@ -21,73 +21,87 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">START BOOTSTRAP</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#about">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#contact">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+        <div id="nav_box">
+            <nav class="navbar navbar-expand-md container-md navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand fs-6" href="#">START BOOTSTRAP</a>
+                  <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#about">ABOUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#contact">CONTACT</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
 
-        <div id="start" class="container-fluid bg-success center_text">
-            <div>
-                <div class="row">
-                    <div class="col-12 col-md-8 col-lg-6 center_block d-flex flex-column justify-content-between align-items-center gy-4 py-3" style="color: white">
-                        <img src="assets/img/avatar.svg" alt="" width="50%">
-                        <!-- CON LA MEDIA QUERY INSERITA, LA STRUTTURA DEL TESTO REGGE FINO A WIDTH 250 PIXEL -->
-                        <h1>START BOOTSTRAP</h1>
-                        <i class="fa-solid fa-star fs-1"></i>
-                        <h6>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
-                    </div>
+        <div id="start" class="container-fluid center_text text-white py-5">
+            <img class="w-25" src="assets/img/avatar.svg" alt="avatar">
+            <div class="py-3">
+                <div class="d-inline-block position-relative star_logo">
+                    <h1>START BOOTSTRAP</h1>
+                    <i class="fa-solid fa-star fs-3"></i>
                 </div>
             </div>
+
+            <!-- CON LA MEDIA QUERY INSERITA, LA STRUTTURA DEL TESTO REGGE FINO A WIDTH 250 PIXEL -->
+            <h6>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
         </div>
     </header>
 
     <main>
 
-        <section id="portfolio" class="container-md">
-            <h2 class="text-center star_line position-relative py-4">PORTFOLIO</h2>
-            <div class="row g-2">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img class="image-fluid img-thumbnail" src="assets/img/cabin.png">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img class="image-fluid img-thumbnail" src="assets/img/cake.png">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img class="image-fluid img-thumbnail" src="assets/img/circus.png">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img class="image-fluid img-thumbnail" src="assets/img/game.png">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img class="image-fluid img-thumbnail" src="assets/img/safe.png">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img class="image-fluid img-thumbnail" src="assets/img/submarine.png">
+        <section id="portfolio" class="container-fluid center_text px-0 py-5">
+            <div class="py-3">
+                <div class="d-inline-block position-relative star_logo">
+                    <h2>PORTFOLIO</h2>
+                    <i class="fa-solid fa-star fs-4"></i>
                 </div>
             </div>
+            <div class="container-md">
+                <div class="row g-1">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="image-fluid img-thumbnail" src="assets/img/cabin.png">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="image-fluid img-thumbnail" src="assets/img/cake.png">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="image-fluid img-thumbnail" src="assets/img/circus.png">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="image-fluid img-thumbnail" src="assets/img/game.png">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="image-fluid img-thumbnail" src="assets/img/safe.png">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="image-fluid img-thumbnail" src="assets/img/submarine.png">
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section id="about" class="container-fluid bg-info">
+        <section id="about" class="container-fluid center_text text-white px-0 py-3">
+            <div class="py-3">
+                <div class="d-inline-block position-relative star_logo">
+                    <h2>&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</h2>
+                    <i class="fa-solid fa-star fs-4"></i>
+                </div>
+            </div>
             <div class="container-md d-flex flex-column align-items-center g-5 py-5">
-                <h2>ABOUT</h2>
-                <div class="row">
+                <div class="row text-start mx-5 mx-md-4 mx-lg-1">
                     <div class="col-xs-12 col-md-6">
                         <p>
                             Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.
@@ -99,16 +113,54 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="mx-auto"> -->
-                    <a href="#" class="btn btn-outline-secondary fw-bold">
-                        <i class="fa fa-download" aria-hidden="true"></i> Download
-                    </a>
-                <!-- </div> -->
             </div>
+            <a href="#" class="btn btn-outline-secondary fw-bold text-white border-white">
+                <i class="fa fa-download" aria-hidden="true"></i> Download
+            </a>
         </section> 
 
-        <section id="contact_me" class="container">
+        <section id="contact" class="container-fluid center_text px-0 py-3">
+            <div class="py-3">
+                <div class="d-inline-block position-relative star_logo">
+                    <h2>CONTACT ME</h2>
+                    <i class="fa-solid fa-star fs-4"></i>
+                </div>
+            </div>
+            <div class="container-md">
+                <form>
 
+                    <div class="row border-bottom mb-3">
+                        <label for="input_name" class="form-label text-start col-4">Name</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="input_name" placeholder="ENTER HERE YOUR NAME & SURNAME">
+                          </div>
+                    </div>
+
+                    <div class="row border-bottom mb-3">
+                        <label for="input_email" class="form-label text-start col-4">Email Address</label>
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="input_email" placeholder="ENTER HERE YOUR EMAIL ADDRESS">
+                          </div>
+                    </div>
+
+                    <div class="row border-bottom mb-3">
+                        <label for="input_phone" class="form-label text-start col-4">Phone Number</label>
+                        <div class="col-8">
+                            <input type="tel" class="form-control" id="input_phone" placeholder="ENTER HERE YOUR TELEPHONE NUMBER">
+                          </div>
+                    </div>
+
+                    <div id="message" class="row border-bottom mb-3">
+                        <label for="input_message" class="form-label text-start col-12">Message</label>
+                        <div class="col-12 input-group-lg">
+                            <input type="text" class="form-control" id="input_message" placeholder="WRITE HERE YOUR MESSAGE TO US">
+                        </div>
+                    </div>
+                    <div class="col-1 col-md-1">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
     </main>
